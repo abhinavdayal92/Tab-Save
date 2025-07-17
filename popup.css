@@ -1,20 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    width: 250px;
-    padding: 10px;
-    text-align: center;
+    width: 300px; /* A bit wider for the new layout */
+    padding: 15px;
     background-color: #f4f4f9;
 }
 
 h3 {
     color: #333;
-    margin-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
 }
 
-button {
+/* --- Save Controls --- */
+.save-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+#session-name-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#save-button {
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
     border: none;
     border-radius: 5px;
     background-color: #4a90e2;
@@ -24,14 +39,62 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+#save-button:hover {
     background-color: #357abd;
 }
 
-#restore-button {
-    background-color: #50e3c2;
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
 }
 
-#restore-button:hover {
+/* --- Sessions List --- */
+#sessions-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.session-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+.session-name {
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+
+.session-item button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.restore-btn {
+    background-color: #50e3c2;
+}
+.restore-btn:hover {
     background-color: #40bfa0;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+.delete-btn:hover {
+    background-color: #c0392b;
 }

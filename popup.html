@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="popup.css">
-    </head>
-    <body>
-        <h3>Tab Saver</h3>
-        <button id="save-button">Save & Close Tabs</button>
-        <button id="restore-button">Restore Last Session</button>
-        <script src="popup.js"></script>
-    </body>
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+    <h3>Save New Session</h3>
+    <div class="save-controls">
+    <input type="text" id="session-name-input" placeholder="Enter session name...">
+    <button id="save-button">Save & Close Window</button>
+    </div>
+
+    <hr>
+
+    <h3>Saved Sessions</h3>
+    <div id="sessions-list">
+    </div>
+
+    <script src="popup.js"></script>
+</body>
 </html>
