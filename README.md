@@ -7,7 +7,8 @@ A simple browser extension to save your current tabs, close them for a clean wor
 
 -   **Save & Close:** Saves all open tabs in your current window to local storage and then closes them.
 -   **Restore Session:** Opens all the previously saved tabs, each in a new tab.
--   **Save Multiple Windows** Allows user to save multiple windows [work , personal , project]
+-   **Save Multiple Windows:** Allows user to save multiple windows [work , personal , project].
+  
 ## How to Install and Use
 
 Since this is a local project, you need to load it into your browser in "Developer mode."
