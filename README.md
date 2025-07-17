@@ -1,6 +1,7 @@
 # Tab Saver Extension
 
 A simple browser extension to save your current tabs, close them for a clean workspace, and restore them later.
+Features: Can save Multiple windows [work , personal , projects]
 
 ## Features
 
